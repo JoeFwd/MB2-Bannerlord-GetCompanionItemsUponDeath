@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module>
+    <Name value="Get Companion Items Upon Death"/>
+    <Id value="GetCompanionItemsUponDeath"/>
+    <Version value="v.1.0.0"/>
+    <SingleplayerModule value="true"/>
+    <MultiplayerModule value="false"/>
+    <DependedModules>
+        <DependedModule Id="Native"/>
+    </DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="GetCompanionItemsUponDeath"/>
+            <DLLName value="GetCompanionItemsUponDeath.dll"/>
+            <SubModuleClassType value="GetCompanionItemsUponDeath.GetCompanionItemsUponDeathSubModule"/>
+            <Tags>
+                <Tag key="DedicatedServerType" value="none" />
+                <Tag key="IsNoRenderModeElement" value="false" />
+            </Tags>
+        </SubModule>
+    </SubModules>
+    <Xmls/>
+</Module>

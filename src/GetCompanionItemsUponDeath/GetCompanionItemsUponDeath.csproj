@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>x64</Platforms>
+        <Platform>x64</Platform>
+        <OutDir>..\..\bin\Win64_Shipping_Client</OutDir>
+        <OutputPath>..\..\bin\Win64_Shipping_Client</OutputPath>
+        <MnB2BannerlordRefDir>..\..\..\..</MnB2BannerlordRefDir>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="$(Configuration.StartsWith('Debug'))">
+        <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Reference Include="$(MnB2BannerlordRefDir)\bin\Win64_Shipping_Client\TaleWorlds.*.dll">
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\SubModule.xml">
+            <Link>SubModule.xml</Link>
+        </None>
+        <None Include="..\..\LICENCE">
+            <Link>LICENCE</Link>
+        </None>
+        <None Include="..\..\.gitignore">
+            <Link>.gitignore</Link>
+        </None>
+        <None Include="..\..\.gitattributes">
+            <Link>.gitattributes</Link>
+        </None>
+    </ItemGroup>
+    
+</Project>
